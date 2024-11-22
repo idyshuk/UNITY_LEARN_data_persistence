@@ -18,7 +18,7 @@ public class Brick : MonoBehaviour
         MaterialPropertyBlock block = new MaterialPropertyBlock();
         switch (PointValue)
         {
-            case 1 :
+            case 1:
                 block.SetColor(BaseColor, Color.green);
                 break;
             case 2:
@@ -31,6 +31,7 @@ public class Brick : MonoBehaviour
                 block.SetColor(BaseColor, Color.red);
                 break;
         }
+
         renderer.SetPropertyBlock(block);
     }
 
